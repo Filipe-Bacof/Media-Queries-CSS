@@ -6,7 +6,7 @@
 
 html,
 body {
-    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #fd1d1d, #e1306c, #c13584, #833ab4, #5851db, #405de6);
+    background: linear-gradient(135deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #fd1d1d, #e1306c, #c13584, #833ab4, #5851db, #405de6);
     min-width: 100vw;
     min-height: 100vh;
     font-family: "Inter";
