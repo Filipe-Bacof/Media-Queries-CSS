@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    width: 100vw;
+    background-repeat: no-repeat;
+}
+
+.televisao,
+.computador,
+.notebook,
+.tablet,
+.celular,
+.tamagoche{
+    display: none;
+}
+
+@media (max-width: 319px){
+    .tamagoche {
+        display: block;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .celular {
+        display: block;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px){
+    .tablet {
+        display: block;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    .notebook {
+        display: block;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1200px){
+    .computador {
+        display: block;
+    }
+}
+@media (min-width: 1201px){
+    .televisao {
+        display: block;
+    }
+}
