@@ -2,17 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
 }
 
+html,
 body {
-    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-    width: 100vw;
-    background-repeat: no-repeat;
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #fd1d1d, #e1306c, #c13584, #833ab4, #5851db, #405de6);
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: "Inter";
+    line-height: 130%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    margin: 1em auto;
+}
+
+img {
+    max-width: 80vw;
 }
 
 .televisao,
@@ -20,18 +32,24 @@ body {
 .notebook,
 .tablet,
 .celular,
-.tamagoche{
+.tamagotchi{
     display: none;
 }
 
 @media (max-width: 319px){
-    .tamagoche {
+    .tamagotchi {
         display: block;
+    }
+    h1 {
+        font-size: 1rem;
     }
 }
 @media (min-width: 320px) and (max-width: 480px){
     .celular {
         display: block;
+    }
+    h1 {
+        font-size: 1.5rem;
     }
 }
 @media (min-width: 481px) and (max-width: 768px){
